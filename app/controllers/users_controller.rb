@@ -9,11 +9,11 @@ class UsersController < ApplicationController
     @user.right = params[:right].to_i
     @user.wrong = params[:wrong].to_i
     @user.level = params[:level]
-    if parmas[:operator] == "a"
+    if params[:operator] == "a"
       @user.operator = "+"
     else
     end
-
+    binding.pry
     @user.save
 
     
