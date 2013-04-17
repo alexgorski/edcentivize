@@ -16,14 +16,7 @@ class UsersController < ApplicationController
 
     @user.save
 
-    respond_to do |format|
-      if @user.save
-        format.js   {}      
-      else
-        format.html { render action: "new" }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
-    end
+    
   end
 
 end
