@@ -13,7 +13,6 @@ class UsersController < ApplicationController
       @user.operator = "+"
     else
     end
-    binding.pry
     @user.save
 
     
