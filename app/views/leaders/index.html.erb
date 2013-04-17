@@ -1,0 +1,62 @@
+<h1>Leaders</h1>
+<h2><%= link_to "Back", users_path %> </h2>
+
+<table>
+  Level 1
+  <th>Name</th>
+  <th>Number Correct</th>
+<% @level1.each do |leader| %>
+  <tr>
+    <td><%= leader.name %></td>
+    <td><%= leader.right%></td>
+  </tr>
+  <% end %>
+</table>
+
+<table>
+  Level 2
+  <th>Name</th>
+  <th>Number Correct</th>
+<%= @level2.each do |leader| %>
+  <tr>
+    <td><%= leader.name %></td>
+    <td><%= leader.right%></td>
+  </tr>
+  <% end %>
+</table>
+
+<table>
+  Level 3
+  <th>Name</th>
+  <th>Number Correct</th>
+<% @level3.each do |leader| %>
+  <tr>
+    <td><%= leader.name %></td>
+    <td><%= leader.right%></td>
+  </tr>
+  <% end %>
+</table>
+
+<table>
+  Level 4
+  <th>Name</th>
+  <th>Number Correct</th>
+<% @level4.each do |leader| %>
+<tr>
+  <td><%= leader.name %></td>
+  <td><%= leader.right%></td>
+</tr>
+  <% end %>
+</table>
+
+<table>
+  Level 5
+  <th>Name</th>
+  <th>Number Correct</th>
+<% @level5.each do |leader| %>
+<tr>
+  <td><%= leader.name %></td>
+  <td><%= leader.right%></td>
+</tr>
+  <% end %>
+</table>

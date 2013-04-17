@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Calculations</title>
+	<link rel="stylesheet" href="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- <script type="text/javascript" src="/assets/clock.js" /> -->
+</script>
+</head>
+
+<body>
+
+	<div id='timer'></div>
+
+	
+	<div id="wrapper">
+		
+	<h1>Math Challenge!</h1>
+		<div id="operator_levels">
+			Choose Operator:
+			<span id="operator"></span>
+			<button class="operator" type="button" id="operator1" value="+">+</button>
+			
+	
+		</div>
+		<div id="gear_levels">
+			Choose Level:
+			<span id="level"></span>
+			<button class="gear" type="button" id="gear1" value="1">1</button>
+			<button class="gear" type="button" id="gear2" value="2">2</button>
+			<button class="gear" type="button" id="gear3" value="3">3</button>
+			<button class="gear" type="button" id="gear4" value="4">4</button>
+			<button class="gear" type="button" id="gear5" value="5">5</button>
+		</div>
+		<div id="start_line">
+			<input type="text" value="Name or alias"></input>
+			<button class="start" type="button" id="start1" value="">Start</button>
+		</div>
+		
+		<div id="scoreboard">
+			<span>Scores</span>
+			<span>Right:</span><span id="total_right"></span>
+			<span>Wrong:</span><span id="total_wrong"></span>
+		</div>	
+		
+		<div>
+			<table id="addition">
+			<tr id="first">
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+
+			</tr>
+			<tr id="second">
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+
+			</tr>
+			<tr id="third">
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+
+			</tr>
+			<tr id="fourth">
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+
+			</tr>
+			<tr id="fifth">
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+				<td><span type="text">---</span> <span type="text">--</span> <span type="text">---</span> = <input type="text"></input></td>
+
+			</tr>
+		</table>
+
+
+
+		</div>
+		<h2><%= link_to "Leaders", leaders_path %> <h2>
+		
+			
+	</div><!-- #wrapper -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="app/assets/javscripts/jquery-1.8.0.min.js"><\/script>')</script>
+	
+		
+</body>
+</html>
