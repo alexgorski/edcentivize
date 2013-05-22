@@ -15,6 +15,11 @@ class UsersController < ApplicationController
     end
     @user.save
 
+    respond_to do |format|
+       format.json {render :json => @user}
+    
+    end
+
     
   end
 
