@@ -49,4 +49,4 @@ $(document).ready(function() {
       setTimeout(Tick, 1000);
     }
   })
-})
+});
